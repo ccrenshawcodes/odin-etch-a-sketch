@@ -1,11 +1,17 @@
 const container = document.querySelector('#container');
 
-const square = document.createElement('div');
-square.style.cssText = 'color: white; background-color: blue'; 
-square.textContent = 'hello world';
 
-function makeGrid() {
-    container.appendChild(square);
+
+function makeGrid(num) {
+    for (let i = 0; i < num; i++) {
+        const square = document.createElement('div');
+        square.setAttribute('class', 'square');
+        square.setAttribute('id', `sq${i}`);
+        square.style.cssText = 'background-color: blue'; 
+        square.textContent = `hello world ${i}`;
+
+        container.appendChild(square);
+    }
 }
 
-makeGrid();
+makeGrid(16);
