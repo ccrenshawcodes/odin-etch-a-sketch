@@ -1,14 +1,19 @@
+.userInput {
+    margin: 15px;
+}
+
 #container {
-    height: 600px;
-    width: 600px;
+    height: 960px;
+    width: 960px;
     display: inline-grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
     align-items: stretch;
     justify-content: stretch;
 }
 
 .square {
-    color: white;
-    text-align: center;
+    background-color: blue;
+}
+
+.square:hover {
+    background-color: black;
 }
