@@ -1,7 +1,5 @@
 const container = document.querySelector('#container');
 
-
-
 function makeGrid(num) {
     let size = num * num;
     for (let i = 0; i < size; i++) {
@@ -16,27 +14,16 @@ function makeGrid(num) {
     
 }
 
-makeGrid(50);
+makeGrid(16);
 
-/*function createGridOnClick() {
-    const btn = document.querySelector('.btn');
-    btn.addEventListener('click', () => {
-        let num = prompt('Enter a square number to create a grid to size')
-        makeGrid(Number(num));
-    })
-}
-
-createGridOnClick();*/
-
-/*function drawOnHover() {
+function drawOnHover() {
     const divs = document.querySelectorAll('.square');
 
     divs.forEach((item) => {
         item.addEventListener('mouseover', () => {
-            item.style.color = 'black';
-            console.log(item);
+            item.style.cssText = 'background-color: black;';
         });
     });
 }
 
-drawOnHover();*/
+drawOnHover();

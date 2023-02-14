@@ -3,17 +3,13 @@
 }
 
 #container {
-    height: 960px;
-    width: 960px;
+    height: 800px;
+    width: 800px;
     display: inline-grid;
     align-items: stretch;
     justify-content: stretch;
 }
 
 .square {
-    background-color: blue;
-}
-
-.square:hover {
-    background-color: black;
+    transition: background-color 1s;
 }
