@@ -8,6 +8,7 @@
     display: inline-grid;
     align-items: stretch;
     justify-content: stretch;
+    border: 2px solid black;
 }
 
 .square {
