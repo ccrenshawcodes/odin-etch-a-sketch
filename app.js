@@ -1,5 +1,6 @@
 const container = document.querySelector('#container');
 const msg = document.querySelector('p');
+const clear = document.querySelector('.clear');
 
 //darken a div when the mouse passes over it
 function drawOnHover() {
@@ -12,8 +13,19 @@ function drawOnHover() {
     });
 }
 
+//clears grid on clear button click
+const clearAll = (() => {
+    clear.addEventListener('click', () => {
+        const divs = document.querySelectorAll('.square');
+        divs.forEach((item) => {
+            item.style.cssText = 'background-color: white;';
+        })
+    })
+})();
+
+//create a new grid:
 //Delete any existing grid items
-//create a new grid
+//generate a new grid to specified size
 //activate the draw on hover function
 function makeGrid(num) {
 
